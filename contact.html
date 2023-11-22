@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="contact.css" rel="stylesheet">
+    <title>Formulaire de Contact</title>
+    <style>
+        /* Ajoutez ici vos styles CSS personnalisés si nécessaire */
+    </style>
+</head>
+<body>
+    <header>
+        <div id="headerlinkdiv">
+            <a class="headerlinks" href="Index.html">Accueil</a>
+            <a class="headerlinks" href="entreprise.html">Entreprise</a>
+            <a class="headerlinks" href="Realisations.html">Réalisations</a>
+            <a class="headerlinks" href="contact.html">Contact</a>
+        </div>
+      
+    </header>
+    <h2>Contactez-nous</h2>
+
+    <form action="traitement.php" method="post">
+        <label for="civilite">Civilité :</label>
+        <select id="civilite" name="civilite" required>
+            <option value="Monsieur">Monsieur</option>
+            <option value="Madame">Madame</option>
+            <option value="Mademoiselle">Mademoiselle</option>
+        </select>
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="adresse">Adresse postale :</label>
+        <textarea id="adresse" name="adresse" required></textarea>
+        <label for="sujet">Sujet :</label>
+        <input type="text" id="sujet" name="sujet" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <label for="politique">Accepter les politiques de confidentialité :</label>
+        <input type="checkbox" id="politique" name="politique" required>
+
+        <input type="submit" value="Envoyer">
+    </form>
+    <footer>
+
+        <p>&copy; 2023 BloomPetals</p>
+    </footer>
+
+</body>
+</html>
